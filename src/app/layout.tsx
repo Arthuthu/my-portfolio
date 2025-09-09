@@ -53,7 +53,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 						{[
 							{ href: "/", label: "Home" },
 							{ href: "/services", label: "Services" },
-							{ href: "/skills", label: "Skill" },
+							{ href: "/skills", label: "Skills" },
 							{ href: "/education", label: "Education" },
 							{ href: "/experience", label: "Experience" },
 							{ href: "/contact", label: "Contact" },

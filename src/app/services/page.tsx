@@ -19,7 +19,7 @@ export default function About() {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
-                About Me
+                Service Page
             </motion.h1>
 
             {/* Paragraph */}
