@@ -2,6 +2,7 @@
 import "./globals.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	const [dark, setDark] = useState(false);
@@ -58,12 +59,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 							{ href: "/experience", label: "Experience" },
 							{ href: "/contact", label: "Contact" },
 						].map(({ href, label }) => {
-							const isActive = typeof window !== "undefined" && window.location.pathname === href;
+							const pathname = usePathname();
+							const isActive = pathname === href;
 							return (
 								<Link
 									key={href}
 									href={href}
-									className={`cursor-pointer ${isActive ? " text-red-500 border-b-2 border-red-600" : ""}`}
+									className={`cursor-pointer 
+										hover:text-red-400 hover:border-b-2 hover:border-red-500 transition-all duration-200 
+										${isActive ? " text-red-500 border-b-2 border-red-600" : ""}`
+									}
 								>
 									{label}
 								</Link>

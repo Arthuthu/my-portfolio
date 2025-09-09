@@ -1,4 +1,4 @@
-"use client"; // 👈 required in App Router
+"use client"; 
 
 import { motion } from "framer-motion";
 import Link from "next/link";
