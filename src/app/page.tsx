@@ -24,13 +24,17 @@ export default function Home() {
 
     return (
         <div className="flex mt-10 flex-col md:flex-row">
-            <div className="flex-1 flex items-center justify-center">
-                <img src="/images/arthur.png" alt="Arthur Geromello"className="w-[calc(100%-2rem)] max-w-[600px] h-auto rounded-full" />
-            </div>
             <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.6 }}
+                transition={{ delay: 0.1, duration: 0.4 }}
+                className="flex-1 flex items-center justify-center">
+                <img src="/images/arthur.png" alt="Arthur Geromello"className="w-[calc(100%-2rem)] max-w-[600px] h-auto rounded-full" />
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.1, duration: 0.4 }}
                 className="flex flex-1 flex-col justify-center items-start text-center mt-4 md:mt-0 md:text-start"
             >
                 <h1 className="text-6xl font-bold">Hello, It's <span className="text-red-500">Arthur Geromello</span></h1>
@@ -40,17 +44,17 @@ export default function Home() {
                     <p>My main backend language is C#, altough I have some experience with Visual Basic and Delphi.</p>
                     <p>On the frontend, I have worked with React and Angular, both using Tailwind CSS and sometimes Bootstrap.</p>
                     <div className="flex gap-4 mt-4 justify-center md:justify-start pb-3">
-                        <a href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" target="_blank" rel="noopener noreferrer"
+                        <a title="Linkedin" href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaLinkedin />
                         </a>
-                        <a href="https://github.com/Arthuthu" target="_blank" rel="noopener noreferrer"
+                        <a title="Github" href="https://github.com/Arthuthu" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaGithub />
                         </a>
-                        <a href="https://wa.me/+5517997824891/" target="_blank" rel="noopener noreferrer"
+                        <a title="Whatsapp" href="https://wa.me/+5517997824891/" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaWhatsapp />

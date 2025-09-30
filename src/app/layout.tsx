@@ -56,10 +56,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 							<div className="hidden md:flex space-x-8 font-semibold text-2xl">
 								{[
 									{ href: "/", label: "Home" },
+									{ href: "/experience", label: "Experience" },
 									{ href: "/services", label: "Services" },
 									{ href: "/skills", label: "Skills" },
 									{ href: "/education", label: "Education" },
-									{ href: "/experience", label: "Experience" },
 									{ href: "/contact", label: "Contact" },
 								].map(({ href, label }) => {
 									const pathname = usePathname();
