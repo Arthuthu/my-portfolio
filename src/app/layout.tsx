@@ -61,7 +61,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 									{[
 										{ href: "/", label: "Home" },
 										{ href: "/experience", label: "Experience" },
-										{ href: "/services", label: "Services" },
 										{ href: "/skills", label: "Skills" },
 										{ href: "/education", label: "Education" },
 										{ href: "/contact", label: "Contact" },
@@ -149,7 +148,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 										<div className="flex flex-col space-y-4 font-semibold text-xl">
 											{[
 												{ href: "/", label: "Home" },
-												{ href: "/services", label: "Services" },
 												{ href: "/skills", label: "Skills" },
 												{ href: "/education", label: "Education" },
 												{ href: "/experience", label: "Experience" },

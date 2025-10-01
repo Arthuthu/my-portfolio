@@ -1,3 +1,27 @@
+export const homePage = {
+    greeting: "Hello, It's",
+    role: "I'm a",
+    roleTitle: "FullStack Developer",
+    description: {
+        base: "I'm a developer from Brazil, I currently have",
+        experience: {
+            year: "year",
+            years: "years",
+            month: "month",
+            months: "months",
+            and: "and",
+        },
+        experience2: "of experience.",
+        stack1: "My main backend language is C#, although I have some experience with Visual Basic and Delphi.",
+        stack2: "On the frontend, I have worked with React, Angular, and Blazor, using Tailwind CSS, MudBlazor, and sometimes Bootstrap.",
+    },
+    socialLinks: {
+        linkedin: "Linkedin",
+        github: "Github",
+        whatsapp: "Whatsapp",
+    }
+};
+
 export const experiencePage = {
     title: 'Professional Experience',
     subtitle: 'A summary of the companies where I\'ve contributed as a developer',

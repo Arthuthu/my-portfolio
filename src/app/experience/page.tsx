@@ -5,7 +5,6 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocale } from "@/hooks/useLocale";
 
-
 export default function Experience() {
     const { t } = useLocale();
     const experiencePage = t.experiencePage;
@@ -37,7 +36,7 @@ export default function Experience() {
 
             <div className="w-full mt-10 space-y-4">
                 {experiencePage.experiences.map((exp: { company: string; period: string; description: string[] }, idx: number) => (
-                    <Disclosure key={idx}>
+                    <Disclosure key={idx} defaultOpen={true}>
                         {({ open }) => (
                             <div className="border border-gray-400 shadow-sm">
                                 <DisclosureButton

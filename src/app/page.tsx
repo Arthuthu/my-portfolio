@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function Home() {
+    const { t } = useLocale();
+    const homePage = t.homePage;
 
     function getCurrentExperience() {
         const startDate = new Date('2023-10-01');
@@ -16,10 +19,12 @@ export default function Home() {
             months += 12;
         }
 
+        const exp = homePage.description.experience;
+        
         if (months === 0) {
-            return `${years} year${years !== 1 ? 's' : ''}`;
+            return `${years} ${years === 1 ? exp.year : exp.years}`;
         }
-        return `${years} year${years !== 1 ? 's' : ''} and ${months} month${months !== 1 ? 's' : ''}`;
+        return `${years} ${years === 1 ? exp.year : exp.years} ${exp.and} ${months} ${months === 1 ? exp.month : exp.months}`;
     }
 
     return (
@@ -37,24 +42,24 @@ export default function Home() {
                 transition={{ delay: 0.1, duration: 0.4 }}
                 className="flex flex-1 flex-col justify-center items-start text-center mt-4 md:mt-0 md:text-start"
             >
-                <h1 className="text-6xl font-bold">Hello, It's <span className="text-red-500">Arthur Geromello</span></h1>
-                <p className="text-5xl font-semibold mt-2 justify-center md:justify-start w-full">I'm a <span className="text-red-500">FullStack Developer</span></p>
+                <h1 className="text-6xl font-bold">{homePage.greeting} <span className="text-red-500">Arthur Geromello</span></h1>
+                <p className="text-5xl font-semibold mt-2 justify-center md:justify-start w-full">{homePage.role} <span className="text-red-500">{homePage.roleTitle}</span></p>
                 <div className="flex flex-col mt-2 text-xl">
-                    <p>I'm a developer from Brazil, I currently have {getCurrentExperience()} of experience.</p>
-                    <p>My main backend language is C#, altough I have some experience with Visual Basic and Delphi.</p>
-                    <p>On the frontend, I have worked with React and Angular, both using Tailwind CSS and sometimes Bootstrap.</p>
+                    <p>{homePage.description.base} {getCurrentExperience()} {homePage.description.experience2}</p>
+                    <p>{homePage.description.stack1}</p>
+                    <p>{homePage.description.stack2}</p>
                     <div className="flex gap-4 mt-4 justify-center md:justify-start pb-3">
-                        <a title="Linkedin" href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" target="_blank" rel="noopener noreferrer"
+                        <a title={homePage.socialLinks.linkedin} href="https://www.linkedin.com/in/arthur-geromello-ab44a8159/" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaLinkedin />
                         </a>
-                        <a title="Github" href="https://github.com/Arthuthu" target="_blank" rel="noopener noreferrer"
+                        <a title={homePage.socialLinks.github} href="https://github.com/Arthuthu" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaGithub />
                         </a>
-                        <a title="Whatsapp" href="https://wa.me/+5517997824891/" target="_blank" rel="noopener noreferrer"
+                        <a title={homePage.socialLinks.whatsapp} href="https://wa.me/+5517997824891/" target="_blank" rel="noopener noreferrer"
                            className="text-3xl text-red-500 border border-red-500 p-2 rounded-full
                             hover:text-gray-900 hover:bg-red-500 transition-colors duration-500">
                             <FaWhatsapp />
