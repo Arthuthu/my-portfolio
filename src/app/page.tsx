@@ -28,12 +28,12 @@ export default function Home() {
     }
 
     return (
-        <div className="flex mt-10 flex-col md:flex-row gap-10 mx-auto max-w-[70%]">
+        <div className="flex mt-10 flex-col gap-10 mx-auto w-[90%] xl:max-w-[70%] md:flex-row ">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
-                className="flex flex-col items-center rounded-md p-5 gap-5 bg-gray-100 dark:bg-[#1E1E1F]">
+                className="flex flex-col items-center rounded-md p-5 gap-5 bg-gray-100 dark:bg-[var(--background-gray)]">
 
                 <img src="/images/arthur.png" alt="Arthur Geromello" className="w-[calc(100%-2rem)] max-w-[800px] h-auto rounded-md" />
                 <motion.div className="text-2xl font-semibold text-center">Arthur Geromello</motion.div>
@@ -61,7 +61,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.1, duration: 0.4 }}
-                className="flex flex-col text-center text-xl mt-4 p-5 gap-3 bg-gray-100 dark:bg-[#1E1E1F] md:mt-0 md:text-start "
+                className="flex flex-col text-center text-xl mt-4 p-5 gap-3 bg-gray-100 rounded-md dark:bg-[var(--background-gray)] md:mt-0 md:text-start "
             >
                 <p>{homePage.description.base} {getCurrentExperience()} {homePage.description.experience2}</p>
                 <p>{homePage.description.stack1}</p>

@@ -60,3 +60,12 @@ export const experiencePage = {
         },
     ],
 }
+
+export const educationPage = {
+    title: "University and Self-Taught Learning",
+    university: "I studied Computer Engineering at UNIFEV (Votuporanga, São Paulo).",
+    universityKnowledge: "During my time I learn about data structures, algorithms, databases, computer architecture, networks, operating systems, software engineering, and project management.",
+    selfTaught: "Beyond formal education, I’ve gained most of my knowledge through self-study, online courses, and hands-on projects.",
+    youtubers: "Some of my most impactful mentors have been content creators like IAmTimCorey, Nick Chapsas, and Milan Jovanović, they helped me build a great foundation of knowledge in C# and programming in general.",
+    disclaimer: "I’m committed to continuously improving by learning best practices, staying up to date with the latest technologies, and filling knowledge gaps to become the best developer I can be.",
+};

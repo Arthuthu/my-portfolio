@@ -60,3 +60,12 @@ export const experiencePage = {
         },
     ],
 }
+
+export const educationPage = {
+    title: "Universidade e Aprendizado Autodidata",
+    university: "Estudei Engenharia da Computação na UNIFEV (Votuporanga, São Paulo).",
+    universityKnowledge: "Durante meu tempo lá, aprendi sobre estruturas de dados, algoritmos, bancos de dados, arquitetura de computadores, redes, sistemas operacionais, engenharia de software e gerenciamento de projetos.",
+    selfTaught: "Além da educação formal, adquiri grande parte do meu conhecimento por meio de autoestudo, cursos online e projetos práticos.",
+    youtubers: "Alguns dos meus mentores mais impactantes foram criadores de conteúdo como IAmTimCorey, Nick Chapsas e Milan Jovanović, eles me ajudaram a construir uma ótima base de conhecimento em C# e programação em geral.",
+    disclaimer: "Estou comprometido em melhorar continuamente, aprendendo boas práticas, mantendo-me atualizado com as tecnologias mais recentes e preenchendo lacunas de conhecimento para me tornar o melhor desenvolvedor que posso ser.",
+};

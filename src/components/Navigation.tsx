@@ -31,7 +31,7 @@ export function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProps) {
                         <Link
                             key={href}
                             href={href}
-                            className={`cursor-pointer 
+                            className={`cursor-pointer
                             hover:text-red-400 hover:border-b-2 hover:border-red-500 transition-all duration-200 
                             ${isActive ? "text-red-500 border-b-2 border-red-600" : ""}`
                             }
@@ -57,7 +57,7 @@ export function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProps) {
 
                 <div className={`
                 absolute top-0 right-0 h-full w-64
-                bg-gray-100 dark:bg-[#0D0B0B] shadow-xl
+                bg-gray-100 dark:bg-[var(--background-gray)] shadow-xl
                 transform transition-transform duration-300 ease-in-out
                 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
                 `}>
@@ -91,8 +91,7 @@ export function Navigation({ isMenuOpen, setIsMenuOpen }: NavigationProps) {
                                         href={href}
                                         onClick={() => setIsMenuOpen(false)}
                                         className={`cursor-pointer block px-4 py-2 rounded-md
-                                        hover:text-red-400 hover:bg-gray-200 dark:hover:bg-stone-800 transition-all duration-200
-                                        ${isActive ? "text-red-500 bg-gray-200 dark:bg-stone-800" : ""}`
+                                        ${isActive ? "text-red-500 bg-gray-200 dark:bg-[var(--background-light-gray)]" : ""}`
                                         }
                                     >
                                         {label}

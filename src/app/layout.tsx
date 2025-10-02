@@ -29,11 +29,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
 	return (
 		<html lang="en" className={dark ? "dark" : ""}>
-			<body className="bg-[#EDEDED] dark:bg-[#121212] text-gray-900 dark:text-white">
+			<body className="bg-[var(--background-light)] dark:bg-[var(--background-dark)] text-gray-900 dark:text-white">
 				<LocaleProvider>
-					<nav className="p-5">
+					<nav className="p-5 overflow-x-auto">
 						<div className="max-w-7xl mx-auto">
-							<div className="flex justify-between items-center">
+							<div className="flex justify-between items-center gap-10">
 								<div className="flex items-center gap-4">
 									<Link href="/" className="text-4xl text-red-500 font-bold">Arthur</Link>
 									<LanguageSwitcher />
@@ -56,6 +56,35 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 										</div>
 									</div>
 								</div>
+
+								<button
+									className="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-stone-800 transition-colors"
+									onClick={() => setIsMenuOpen(!isMenuOpen)}
+									aria-label="Toggle menu"
+								>
+									<svg
+										className="w-6 h-6"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+									>
+										{isMenuOpen ? (
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth={2}
+												d="M6 18L18 6M6 6l12 12"
+											/>
+										) : (
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth={2}
+												d="M4 6h16M4 12h16M4 18h16"
+											/>
+										)}
+									</svg>
+								</button>
 
 								<Navigation isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 							</div>
