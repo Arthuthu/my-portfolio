@@ -1,47 +1,105 @@
-"use client"; // 👈 required in App Router
+"use client";
 
 import { motion } from "framer-motion";
+import { useLocale } from "@/hooks/useLocale";
 import Link from "next/link";
 
-export default function About() {
+export default function Skills() {
+    const { t } = useLocale();
+    const skillsPage = t.skillsPage;
+
+    const categories = [
+        {
+            title: skillsPage.programmingLanguages,
+            items: [
+                "C# (APIs, .NET Core, Blazor, Entity Framework, Dapper, Hangfire)",
+                "Delphi (Horse)",
+                "Visual Basic (.NET Framework)",
+                "JavaScript",
+                "TypeScript",
+                "SQL (SQL Server, Firebird)",
+            ],
+        },
+        {
+            title: skillsPage.frameworksAndLibraries,
+            items: [
+                ".NET Core",
+                "Blazor / MudBlazor",
+                "Angular (19+)",
+                "React",
+                "Bootstrap",
+                "TailwindCSS",
+                "DevExpress",
+                "Fuse (layouts)",
+            ],
+        },
+        {
+            title: skillsPage.databases,
+            items: [
+                "SQL Server",
+                "Firebird",
+            ],
+        },
+        {
+            title: skillsPage.toolsAndTechnologies,
+            items: [
+                "Entity Framework",
+                "Dapper",
+                "RabbitMQ",
+                "REST APIs",
+                "DDD (Domain-Driven Design)",
+                "SVN, GitHub",
+            ],
+        },
+    ];
+
     return (
-        <motion.div
-            className="flex flex-col items-center justify-center h-screen text-center"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-        >
-            {/* Heading */}
-            <motion.h1
-                className="text-4xl font-bold"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
-            >
-                Skills Page
-            </motion.h1>
+        <main className="min-h-[calc(100vh-6rem)] px-6">
+            <div className="max-w-6xl mx-auto">
+                <motion.header
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-center mb-5"
+                >
+                    <h1 className="text-4xl font-bold mb-3">{ skillsPage.title }</h1>
+                    <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        { skillsPage.description }
+                    </p>
+                </motion.header>
 
-            {/* Paragraph */}
-            <motion.p
-                className="mt-4 max-w-md text-lg"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 0.6 }}
-            >
-                I’m a developer passionate about clean UIs and smooth transitions.
-            </motion.p>
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {categories.map((cat, idx) => (
+                        <motion.div
+                            key={cat.title}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.45, delay: idx * 0.08 }}
+                            className="bg-gray-100 dark:bg-[var(--background-gray)] rounded-xl py-3 px-5 shadow-sm"
+                        >
+                            <h2 className="text-2xl font-semibold mb-4">{cat.title}</h2>
+                            <ul className="flex flex-col gap-3">
+                                {cat.items.map((item) => (
+                                    <li key={item} className="flex items-center gap-3">
+                                        <span className="mt-1 inline-flex h-3 w-3 rounded-full bg-red-500" />
+                                        <span className="text-gray-700 dark:text-gray-200">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+                    ))}
+                </section>
 
-            {/* Link */}
-            <motion.div
-                initial={{ x: -50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.7, duration: 0.5 }}
-            >
-                <Link href="/" className="mt-6 inline-block underline">
-                    ← Back Home
-                </Link>
-            </motion.div>
-        </motion.div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6, duration: 0.5 }}
+                    className="mt-10 text-center"
+                >
+                    <p className="text-gray-600 dark:text-gray-300">Se quiser que eu destaque alguma habilidade em particular ou adicionar certificados/projetos relacionados, posso incluir.</p>
+                    <Link href="/contact" className="mt-4 inline-block text-red-500 hover:text-red-600 underline">Entrar em contato</Link>
+                </motion.div>
+            </div>
+        </main>
     );
 }

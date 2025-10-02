@@ -9,14 +9,17 @@ export default function About() {
 
     return (
         <div className="flex flex-col gap-5 items-center mx-auto w-[95%] md:max-w-[55%]">
-            <motion.h1
-                className="text-4xl font-bold mb-5 text-center"
+            <motion.header
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 0.1, duration: 0.4 }}
+                transition={{ duration: 0.5 }}
+                className="text-center mb-5"
             >
-                {educationPage.title}
-            </motion.h1>
+                <h1 className="text-4xl font-bold mb-3">{educationPage.title}</h1>
+                <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    {educationPage.description}
+                </p>
+            </motion.header>
 
             <motion.div
                 initial={{ opacity: 0 }}

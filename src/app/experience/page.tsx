@@ -65,10 +65,13 @@ export default function Experience() {
                                                     animate={{ opacity: 1 }}
                                                     exit={{ opacity: 0 }}
                                                     transition={{ duration: 0.08 }}
-                                                    className="px-6 pt-2 pb-4 text-md text-semibold text-gray-800 dark:text-white text-left list-disc space-y-2"
+                                                    className="pt-2 pb-4 text-md text-semibold text-gray-800 dark:text-white text-left list-disc space-y-2"
                                                 >
                                                     {exp.description.map((point: string, i: number) => (
-                                                        <li key={i}>{point}</li>
+                                                        <li key={point} className="flex items-center gap-3">
+                                                            <span className="mt-1 inline-flex h-3 w-3 rounded-full bg-red-500" />
+                                                            <span className="text-gray-700 dark:text-gray-200">{point}</span>
+                                                        </li>
                                                     ))}
                                                 </motion.ul>
                                             </DisclosurePanel>

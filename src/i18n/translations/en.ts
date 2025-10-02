@@ -64,7 +64,8 @@ export const experiencePage = {
 }
 
 export const educationPage = {
-    title: "University and Self-Taught Learning",
+    title: "Education",
+    description: "University and Self-Taught Learning",
     university: "I studied Computer Engineering at UNIFEV (Votuporanga, São Paulo).",
     universityKnowledge: "During my time I learn about data structures, algorithms, databases, computer architecture, networks, operating systems, software engineering, and project management.",
     selfTaught: "Beyond formal education, I’ve gained most of my knowledge through self-study, online courses, and hands-on projects.",
@@ -81,3 +82,12 @@ export const contactPage = {
     locationTitle: "Location",
     locationDescription: "View my location on Google Maps"
 };
+
+export const skillsPage = {
+    title: "Skills",
+    description: "Here are some of the skills I've developed throughout my career. They include backend, frontend, database technologies, and architectural practices.",
+    programmingLanguages: "Programming Languages",
+    frameworksAndLibraries: "Frameworks & Libraries",
+    databases: "Databases",
+    toolsAndTechnologies: "Tools & Technologies",
+}

@@ -62,7 +62,8 @@ export const experiencePage = {
 }
 
 export const educationPage = {
-    title: "Universidade e Aprendizado Autodidata",
+    title: "Educação",
+    description: "Universidade e Aprendizado Autodidata",
     university: "Estudei Engenharia da Computação na UNIFEV (Votuporanga, São Paulo).",
     universityKnowledge: "Durante meu tempo lá, aprendi sobre estruturas de dados, algoritmos, bancos de dados, arquitetura de computadores, redes, sistemas operacionais, engenharia de software e gerenciamento de projetos.",
     selfTaught: "Além da educação formal, adquiri grande parte do meu conhecimento por meio de autoestudo, cursos online e projetos práticos.",
@@ -79,3 +80,12 @@ export const contactPage = {
     locationTitle: "Localização",
     locationDescription: "Veja minha localização no Google Maps"
 };
+
+export const skillsPage = {
+    title: "Habilidades",
+    description: "Aqui estão algumas das habilidades que tenho desenvolvido ao longo da minha carreira. Elas incluem tecnologias de backend, frontend, bancos de dados e práticas arquiteturais.",
+    programmingLanguages: "Linguagens de Programação",
+    frameworksAndLibraries: "Frameworks & Bibliotecas",
+    databases: "Bancos de Dados",
+    toolsAndTechnologies: "Ferramentas & Tecnologias",
+}
