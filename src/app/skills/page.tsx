@@ -90,16 +90,6 @@ export default function Skills() {
                         </motion.div>
                     ))}
                 </section>
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.6, duration: 0.5 }}
-                    className="mt-10 text-center"
-                >
-                    <p className="text-gray-600 dark:text-gray-300">Se quiser que eu destaque alguma habilidade em particular ou adicionar certificados/projetos relacionados, posso incluir.</p>
-                    <Link href="/contact" className="mt-4 inline-block text-red-500 hover:text-red-600 underline">Entrar em contato</Link>
-                </motion.div>
             </div>
         </main>
     );
