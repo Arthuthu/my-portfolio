@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const layoutPage = {
     home: 'Home',
     experience: 'Experience',
@@ -68,4 +70,14 @@ export const educationPage = {
     selfTaught: "Beyond formal education, I’ve gained most of my knowledge through self-study, online courses, and hands-on projects.",
     youtubers: "Some of my most impactful mentors have been content creators like IAmTimCorey, Nick Chapsas, and Milan Jovanović, they helped me build a great foundation of knowledge in C# and programming in general.",
     disclaimer: "I’m committed to continuously improving by learning best practices, staying up to date with the latest technologies, and filling knowledge gaps to become the best developer I can be.",
+};
+
+export const contactPage = {
+    title: "Get in Touch",
+    linkedInDescription: "Let's connect via LinkedIn",
+    githubDescription: "Check out my projects on GitHub",
+    whatsappDescription: "Let's chat on WhatsApp",
+    emailDescription: "Drop me a message via Email",
+    locationTitle: "Location",
+    locationDescription: "View my location on Google Maps"
 };

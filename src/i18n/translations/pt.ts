@@ -69,3 +69,13 @@ export const educationPage = {
     youtubers: "Alguns dos meus mentores mais impactantes foram criadores de conteúdo como IAmTimCorey, Nick Chapsas e Milan Jovanović, eles me ajudaram a construir uma ótima base de conhecimento em C# e programação em geral.",
     disclaimer: "Estou comprometido em melhorar continuamente, aprendendo boas práticas, mantendo-me atualizado com as tecnologias mais recentes e preenchendo lacunas de conhecimento para me tornar o melhor desenvolvedor que posso ser.",
 };
+
+export const contactPage = {
+    title: "Entre em Contato",
+    linkedInDescription: "Entre em contato pelo Linkedin",
+    githubDescription: "Confira meus projetos no GitHub",
+    whatsappDescription: "Vamos conversar pelo WhatsApp",
+    emailDescription: "Me envie uma mensagem por Email",
+    locationTitle: "Localização",
+    locationDescription: "Veja minha localização no Google Maps"
+};
