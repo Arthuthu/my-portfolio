@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const layoutPage = {
     home: 'Início',
     experience: 'Experiência',
@@ -7,6 +9,7 @@ export const layoutPage = {
 }
 
 export const homePage = {
+    title: "Arthur Geromello - Portfolio",
     greeting: "Olá, eu sou",
     role: "Sou",
     roleTitle: "Desenvolvedor FullStack",

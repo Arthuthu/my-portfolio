@@ -49,6 +49,7 @@ export default function Contact() {
 
     return (
         <div className="min-h-[calc(100vh-6rem)] flex flex-col items-center px-4">
+            <title>{ contactPage.title }</title>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

@@ -9,6 +9,7 @@ export const layoutPage = {
 }
 
 export const homePage = {
+    title: "Arthur Geromello - Portfolio",
     greeting: "Hello, It's",
     role: "I'm a",
     roleTitle: "FullStack Developer",

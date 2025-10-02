@@ -55,6 +55,7 @@ export default function Skills() {
 
     return (
         <main className="min-h-[calc(100vh-6rem)] px-6">
+            <title>{ skillsPage.title }</title>
             <div className="max-w-6xl mx-auto">
                 <motion.header
                     initial={{ opacity: 0 }}

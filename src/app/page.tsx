@@ -29,6 +29,7 @@ export default function Home() {
 
     return (
         <div className="flex mt-10 flex-col gap-10 mx-auto w-[90%] xl:max-w-[70%] md:flex-row ">
+            <title>{ homePage.title }</title>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

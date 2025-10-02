@@ -16,6 +16,7 @@ export default function Experience() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.4 }}
         >
+            <title>{experiencePage.title}</title>
             <motion.h1
                 className="text-4xl font-bold"
                 initial={{ opacity: 0 }}
