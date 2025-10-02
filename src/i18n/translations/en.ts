@@ -1,3 +1,11 @@
+export const layoutPage = {
+    home: 'Home',
+    experience: 'Experience',
+    skills: 'Skills',
+    education: 'Education',
+    contact: 'Contact',
+}
+
 export const homePage = {
     greeting: "Hello, It's",
     role: "I'm a",
