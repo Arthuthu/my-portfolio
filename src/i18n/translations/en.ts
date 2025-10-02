@@ -20,8 +20,8 @@ export const homePage = {
             and: "and",
         },
         experience2: "of experience.",
-        stack1: "My main backend language is C#, although I have some experience with Visual Basic and Delphi.",
-        stack2: "On the frontend, I have worked with React, Angular, and Blazor, using Tailwind CSS, MudBlazor, and sometimes Bootstrap.",
+        stack1: "I am a Full-Stack Developer specializing in backend development with C# and frontend development with React, Angular, and Blazor. I have worked on building scalable APIs and modern web applications, applying clean architecture principles such as DDD and leveraging frameworks like .NET Core, MudBlazor, and Tailwind CSS.",
+        stack2: "My background includes maintaining legacy systems in Visual Basic, as well as developing modern solutions with Angular 19+ and component libraries such as DevExpress and Fuse. I value writing clean, maintainable code, collaborating effectively in teams, and continuously learning new technologies.",
     },
     socialLinks: {
         linkedin: "Linkedin",

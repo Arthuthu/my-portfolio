@@ -1,11 +1,10 @@
 "use client";
-import "./globals.css";
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { LocaleProvider } from "@/contexts/LocaleContext";
 import { Navigation } from "@/components/Navigation";
+import { LocaleProvider } from "@/contexts/LocaleContext";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import "./globals.css";
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	const [dark, setDark] = useState(false);
@@ -30,7 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
 	return (
 		<html lang="en" className={dark ? "dark" : ""}>
-			<body className="bg-gray-200 dark:bg-[#0D0B0B] text-gray-900 dark:text-white">
+			<body className="bg-[#EDEDED] dark:bg-[#121212] text-gray-900 dark:text-white">
 				<LocaleProvider>
 					<nav className="p-5">
 						<div className="max-w-7xl mx-auto">
@@ -42,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 										onClick={() => setDark((d) => !d)}
 										className="flex items-center gap-2 cursor-pointer select-none p-2 rounded-full transition-all duration-300 hover:scale-105"
 									>
-										<div className="relative w-14 h-7 rounded-full bg-gray-50 dark:bg-stone-800 transition-colors duration-300">
+										<div className="relative w-14 h-7 rounded-full bg-gray-200 dark:bg-stone-800 transition-colors duration-300">
 											<div className={`absolute top-1 left-1 w-5 h-5 rounded-full transform transition-transform duration-300 ${dark ? 'translate-x-7 bg-stone-800' : 'translate-x-0 bg-red-500'}`}>
 												{dark ? (
 													<svg className="w-5 h-5 text-stone-200" fill="currentColor" viewBox="0 0 20 20">

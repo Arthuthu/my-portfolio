@@ -40,7 +40,7 @@ export default function Experience() {
                         {({ open }) => (
                             <div className="border border-gray-400 shadow-sm">
                                 <DisclosureButton
-                                    className="flex w-full justify-between bg-gray-100 px-4 py-3 text-left text-lg font-medium hover:bg-gray-200 dark:bg-stone-900 dark:hover:bg-stone-800 transition"
+                                    className="flex w-full justify-between bg-gray-100 px-4 py-3 text-left text-lg font-medium hover:bg-gray-200 dark:bg-[#1E1E1F] dark:hover:bg-[#2B2B2C] transition"
                                 >
                                     <span>
                                         {exp.company} - ({exp.period})

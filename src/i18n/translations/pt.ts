@@ -20,8 +20,8 @@ export const homePage = {
             and: "e",
         },
         experience2: "de experiência.",
-        stack1: "Minha principal linguagem backend é C#, embora eu tenha experiência com Visual Basic e Delphi.",
-        stack2: "No frontend, trabalhei com React, Angular e Blazor, usando Tailwind CSS, Mudblazor e às vezes Bootstrap.",
+        stack1: "Sou um Desenvolvedor Full-Stack especializado em desenvolvimento backend com C# e desenvolvimento frontend com React, Angular e Blazor. Tenho trabalhado na construção de APIs escaláveis e aplicações web modernas, aplicando princípios de arquitetura limpa como DDD e utilizando frameworks como .NET Core, MudBlazor e Tailwind CSS.",
+        stack2: "Minha experiência inclui a manutenção de sistemas legados em Visual Basic, além do desenvolvimento de soluções modernas com Angular 19+ e bibliotecas de componentes como DevExpress e Fuse. Valorizo a escrita de código limpo e de fácil manutenção, colaboração efetiva em equipe e o aprendizado contínuo de novas tecnologias.",
     },
     socialLinks: {
         linkedin: "Linkedin",
