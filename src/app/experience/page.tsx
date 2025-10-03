@@ -11,7 +11,7 @@ export default function Experience() {
 
     return (
         <motion.div
-            className="flex flex-col items-center justify-center text-center px-4"
+            className="flex flex-col items-center justify-center text-center px-4 mx-auto w-[95%] md:max-w-[55%]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.4 }}
