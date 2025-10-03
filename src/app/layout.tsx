@@ -35,7 +35,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 						<div className="max-w-7xl mx-auto">
 							<div className="flex justify-between items-center gap-10">
 								<div className="flex items-center gap-4">
-									<Link href="/" className="text-4xl text-red-500 font-bold">Arthur</Link>
+									<Link href="/" className="hidden text-4xl text-red-500 font-bold md:block">Arthur</Link>
 									<LanguageSwitcher />
 									<div
 										onClick={() => setDark((d) => !d)}

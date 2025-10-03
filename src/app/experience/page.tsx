@@ -70,8 +70,8 @@ export default function Experience() {
                                                 >
                                                     {exp.description.map((point: string, i: number) => (
                                                         <li key={point} className="flex items-center gap-3">
-                                                            <span className="mt-1 inline-flex h-3 w-3 rounded-full bg-red-500" />
-                                                            <span className="text-gray-700 dark:text-gray-200">{point}</span>
+                                                            <span className="mt-1 h-3 w-3 rounded-full bg-red-500 flex-shrink-0" />
+                                                            <span className="text-gray-700 dark:text-gray-200 break-words">{point}</span>
                                                         </li>
                                                     ))}
                                                 </motion.ul>

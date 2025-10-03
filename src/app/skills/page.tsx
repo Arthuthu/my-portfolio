@@ -81,8 +81,8 @@ export default function Skills() {
                             <h2 className="text-2xl font-semibold mb-4">{cat.title}</h2>
                             <ul className="flex flex-col gap-3">
                                 {cat.items.map((item) => (
-                                    <li key={item} className="flex items-center gap-3">
-                                        <span className="mt-1 inline-flex h-3 w-3 rounded-full bg-red-500" />
+                                    <li key={item} className="flex items-center flex gap-3">
+                                        <span className="mt-1 inline-flex h-3 w-3 rounded-full bg-red-500 flex-shrink-0" />
                                         <span className="text-gray-700 dark:text-gray-200">{item}</span>
                                     </li>
                                 ))}
